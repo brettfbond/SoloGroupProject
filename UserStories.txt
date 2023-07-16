@@ -39,6 +39,7 @@ h/login
 Admin user details:
 username: Admin
 password: Hum@nhrm123
+--------------------------------------------------------------------------------------
 USER STORY 3: Invalid user login
 Acceptance Criteria:
 1. If a user attempts to log in with an empty username field, the system
@@ -53,6 +54,7 @@ try again."
 ideally placed near the respective input fields.
 5. After displaying the error message, the system should allow the user
 to correct their input and attempt to log in again.
+------------------------------------------------------------------------------
 USER STORY 4: Search for an Employee in the HRMS Application
 Acceptance Criteria:
 1. As an admin user, I should be able to search for an employee using
@@ -71,6 +73,7 @@ http://hrmstest.syntaxtechs.net/humanresources/symfony/web/index.php/aut
 h/login
 username: Admin
 password: Hum@nhrm123
+-------------------------------------------------------------------------------------
 USER STORY 5: As an employee, I should be able to change my contact
 details.
 Acceptance Criteria:
@@ -92,7 +95,7 @@ can select or update their marital status (Single, Married, Other).
 should save the changes.
 HRMS url:
 http://hrmstest.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
-------------------------------------------------------------
+-------------------------------------------------------------------------------
 USER STORY 6: As an employee, I should be able to add dependents to my
 profile in the HRMS application.
 As an admin I should be able to add employee's dependents
