@@ -1,0 +1,253 @@
+USER STORY 1: Admin User Login for HRMS Application
+Acceptance Criteria:
+1. An admin user with valid login credentials should be able to
+successfully access the HRMS application.
+2. The login process should involve entering a valid username and
+password combination.
+3. Upon successful login, the admin user should be redirected to the
+appropriate admin dashboard or landing page within the HRMS
+application.
+Application URL:
+http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/log
+in
+username: Admin
+password: Hum@nhrm123
+----------------------------------------------------------------------------
+USER STORY 2: Adding an Employee to the HRMS Application
+Acceptance Criteria:
+1. An admin user should be able to add an employee to the HRMS application
+without providing an employee ID. The system should automatically
+generate a unique employee ID for the new employeeThe required fields for
+this process should include:
+● First Name
+● Middle Name (optional)
+● Last Name
+2. An admin user should also have the option to add an employee to the HRMS
+application by providing a unique employee ID. The required fields for this
+process should include:
+● First Name
+● Middle Name (optional)
+● Last Name
+● Employee ID
+3. The system should provide appropriate error messages or prompts for users
+who attempt to submit incomplete or invalid employee information. Error
+messages should be clear, easily visible, and placed near the respective input
+fields.
+HRMS url:
+http://hrmstest.syntaxtechs.net/humanresources/symfony/web/index.php/aut
+h/login
+Admin user details:
+username: Admin
+password: Hum@nhrm123
+USER STORY 3: Invalid user login
+Acceptance Criteria:
+1. If a user attempts to log in with an empty username field, the system
+should display an error message stating "Username cannot be empty."
+2. If a user attempts to log in with an empty password field, the system
+should display an error message stating "Password cannot be empty."
+3. If a user enters incorrect login credentials (either the wrong username
+or password), the system should display an error message stating
+"Invalid credentials. Please check your username and password and
+try again."
+4. The error messages should be clear and easily visible to the user,
+ideally placed near the respective input fields.
+5. After displaying the error message, the system should allow the user
+to correct their input and attempt to log in again.
+USER STORY 4: Search for an Employee in the HRMS Application
+Acceptance Criteria:
+1. As an admin user, I should be able to search for an employee using
+their full name (first and last name) as the search criteria. The search
+should return all matching employee records.
+2. The search functionality should be flexible and capable of handling
+partial name matches and variations in capitalization.
+3. As an admin user, I should be able to search for an employee using
+their unique employee ID as the search criteria. The search should
+return the exact employee record associated with the provided
+employee ID.
+4. The system should provide a message “No Records Found” if no
+matching employee records are found
+HRMS url:
+http://hrmstest.syntaxtechs.net/humanresources/symfony/web/index.php/aut
+h/login
+username: Admin
+password: Hum@nhrm123
+USER STORY 5: As an employee, I should be able to change my contact
+details.
+Acceptance Criteria:
+1. The employee should be able to access and edit their personal information,
+including the following fields:
+● First Name: A textbox should be displayed where the employee can
+enter or update their first name.
+● Middle Name: A textbox should be displayed where the employee can
+enter or update their middle name (optional).
+● Last Name: A textbox should be displayed where the employee can
+enter or update their last name.
+● Gender: A radio button should be displayed where the employee can
+select or update their gender (Male, Female).
+● Nationality: A dropdown should be displayed where the employee can
+select or update their nationality.
+● Marital Status: A dropdown should be displayed where the employee
+can select or update their marital status (Single, Married, Other).
+2. Upon successful submission of the updated personal information, the system
+should save the changes.
+HRMS url:
+http://hrmstest.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+------------------------------------------------------------
+USER STORY 6: As an employee, I should be able to add dependents to my
+profile in the HRMS application.
+As an admin I should be able to add employee's dependents
+Acceptance Criteria:
+1. The employee should be able to access a dedicated section within the HRMS
+application to add dependents.
+2. The following fields must be displayed and editable for adding a dependent:
+● Name: A textbox should be displayed where the employee can enter
+the full name of the dependent.
+● Relationship: A dropdown should be displayed where the employee
+can select the relationship of the dependent (e.g., Spouse, Child,
+Parent, Sibling, Other).
+● Date of Birth: A calendar or date input field should be displayed
+where the employee can select or enter the dependent's date of birth.
+3. The employee should be able to add multiple dependents, and the HRMS
+application should clearly display the list of dependents added by the
+employee.
+4. The system should provide appropriate error messages or prompts for users
+who submit incomplete or invalid dependent information. Error messages
+should be clear, easily visible, and placed near the respective input fields.
+5. The employee should be able to review, edit, or remove dependents as
+needed.
+----------------------------------------------------------------------------------------------------
+USER STORY 7: As an admin, I want to be able to add current job details for
+employees.
+Acceptance Criteria:
+1. The Admin user can access the employee's profile and navigate to the
+current job details section.
+The following fields should be displayed and editable for the Admin user:
+● Job Title: a dropdown field where the Admin user can select the job
+title of the employee.
+● Employment Status: a dropdown field where the Admin user can
+select the employment status of the employee (Full-time, Part-time,
+Contract, etc.).
+● Job Category: a dropdown field where the Admin user can select the
+job category of the employee (Sales, Marketing, HR, etc.).
+● Joined Date: a calendar where the Admin user can select the date
+when the employee joined the organization.
+● Sub Unit: a dropdown field where the Admin user can select the sub
+unit where the employee is currently working.
+● Location: a dropdown field where the Admin user can select the
+location where the employee is currently working.
+● Start Date: a calendar where the Admin user can select the start date
+of the employee's current job.
+● End Date: a calendar where the Admin user can select the end date of
+the employee's current job (if applicable).
+● Contract Details: a file upload field that accepts files up to 1MB
+where the Admin user can upload the employee's contract details (if
+applicable).
+● The system should validate that mandatory fields (Job Title,
+Employment Status, Joined Date, Sub Unit, Location) are filled in
+before allowing the Admin user to save the current job details.
+● After the Admin user saves the current job details, the system should
+store the current job details in the employee's profile.
+----------------------------------------------------------------------------------------------------
+USER STORY 8: As an employee, I want to be able to add my work
+experience details.
+Acceptance Criteria:
+1. The employee can access their profile and navigate to the work experience
+section.
+The following fields should be displayed and editable for the employee:
+● Company: a text box where the employee can enter the name of the
+company where they worked.
+● Job Title: a text box where the employee can enter their job title.
+● From: a calendar where the employee can select the start date of the
+work experience.
+● To: a calendar where the employee can select the end date of the work
+experience.
+● Comment: a text box where the employee can enter additional
+comments or details about the work experience.
+● The system should validate that mandatory fields (Company, Job
+Title, From) are filled in before allowing the employee to save the
+work experience details.
+● After the employee saves the work experience details, the system
+should store the work experience details in the employee's profile.
+2. The employee should be able to edit or delete their previously saved work
+experience details.
+----------------------------------------------------------------------------------------------------
+USER STORY 9: As an admin user, I want to have the ability to terminate the
+employment of specified employees in the system.
+Acceptance Criteria:
+Given Admin user log in to the system using valid credentials.
+When user accesses the list of employees in the system.
+And select a specified employee from the list.
+And navigate to the employee's job page.
+And select the option to terminate the employment of the specified
+employee.
+Then specified employee is terminated
+----------------------------------------------------------------------------------------------------
+USER STORY 10: As an admin user should be able to add different languages
+in qualifications
+Acceptance Criteria
+Given “Admin” user is logged in
+When “Admin” navigates to Qualifications
+And selects Language
+Then “Admin” user can add any Language
+----------------------------------------------------------------------------------------------------
+USER STORY 11: As an employee, I want to be able to add my language
+proficiency details.
+Acceptance Criteria
+1. The employee can access their profile and navigate to the language
+proficiency section.
+● The following fields should be displayed and editable for the
+employee:
+● Language: a dropdown field where the employee can select the
+language they are proficient in.
+● Fluency: a dropdown field where the employee can select their level
+of fluency in the language (Basic, Intermediate, Advanced, Fluent).
+● Competency: a dropdown field where the employee can select their
+competency level in the language (Speaking, Reading, Writing).
+● Comments: a text box where the employee can enter additional
+comments or details about their language proficiency.
+● The system should validate that mandatory fields (Language, Fluency,
+Competency) are filled in before allowing the employee to save their
+language proficiency details.
+● After the employee saves their language proficiency details, the
+system should store the language proficiency details in the employee's
+profile.
+2. The employee should be able to edit or delete their previously saved
+language proficiency details.
+---------------------------------------------------------------------------------------------------
+USER STORY 12: As an admin user should be able to add different
+memberships under qualifications
+Acceptance Criteria
+Given “Admin” user is logged in
+When “Admin” navigates to Qualifications
+And selects Memberships
+Then “Admin” user can add any Memberships
+---------------------------------------------------------------------------------------------------
+USER STORY 13: As an employee, I want to be able to add my membership
+details.
+Acceptance Criteria
+1. The employee can access their profile and navigate to the membership
+section.
+The following fields should be displayed and editable for the employee:
+● Membership: a dropdown field where the employee can select the
+membership type.
+● Subscription Paid By: a dropdown field where the employee can
+select the entity that paid for the subscription (Employee, Employer,
+Other).
+● Subscription Amount: a text box where the employee can enter the
+subscription amount.
+● Currency: a dropdown field where the employee can select the
+currency used for the subscription payment.
+● Subscription Commence Date: a calendar where the employee can
+select the date when the subscription started.
+● Subscription Renewal Date: a calendar where the employee can select
+the date when the subscription will renew.
+○ The system should validate that mandatory fields (Membership,
+Subscription Paid By, Subscription Amount, Subscription
+Commence Date) are filled in before allowing the employee to
+save their membership details.
+● After the employee saves their membership details, the system should
+store the membership details in the employee's profile.
+2. The employee should be able to edit or delete their previously saved
+membership details.
+● The membership details should be displayed in a clear and organized
+format on the employee's profile page.
